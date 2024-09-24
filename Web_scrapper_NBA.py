@@ -17,7 +17,7 @@ data = json.loads(soup)
 franchise_history = data['resultSets'][0]
 df_franchise_history = pd.DataFrame(franchise_history['rowSet'], columns=franchise_history['headers'])
 
-caminho_csv = "Y:\PPzito pythonzito\coisas para levar ao linux depois python\WSN\df_franchise_history.csv"
+caminho_csv = "./df_franchise_history.csv"
 
 df_franchise_history.to_csv(caminho_csv, index=False)
 
